@@ -42,9 +42,7 @@ function Projects() {
                 height: "200px",
                 background: `url(${devcoach1}) center / cover`
               }}
-            >
-              Dev-coach
-            </CardTitle>
+            ></CardTitle>
             <CardText>
               Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
               hhhhhh hhhhh huijngyhvyujb hujgyujhb
@@ -52,7 +50,6 @@ function Projects() {
             <CardActions border>
               <Button colored> Github </Button>
               <Button colored> Codepen </Button>
-              <Button colored> YOU </Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
               <IconButton name="share" />
@@ -75,9 +72,8 @@ function Projects() {
             <CardActions border>
               <Button colored> Github </Button>
               <Button colored> Codepen </Button>
-              <Button colored> YOU </Button>
             </CardActions>
-            <CardMenu style={{ color: "#fff" }}>
+            <CardMenu style={{ color: "black" }}>
               <IconButton name="share" />
             </CardMenu>
           </Card>
@@ -98,10 +94,9 @@ function Projects() {
             <CardActions border>
               <Button colored> Github </Button>
               <Button colored> Codepen </Button>
-              <Button colored> YOU </Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
-              <IconButton name="share" />
+              {/* <IconButton name="share" /> */}
             </CardMenu>
           </Card>
           <Card className="projects-cards" shadow={5}>
@@ -121,10 +116,9 @@ function Projects() {
             <CardActions border>
               <Button colored> Github </Button>
               <Button colored> Codepen </Button>
-              <Button colored> YOU </Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
-              <IconButton name="share" />
+              {/* <IconButton name="share" /> */}
             </CardMenu>
           </Card>
         </div>
