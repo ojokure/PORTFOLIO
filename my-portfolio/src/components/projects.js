@@ -1,18 +1,132 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Grid, Cell } from "react-mdl";
+import {
+  Tabs,
+  Tab,
+  Grid,
+  Cell,
+  Card,
+  CardActions,
+  CardTitle,
+  Button,
+  CardMenu,
+  CardText,
+  IconButton
+} from "react-mdl";
+import devcoach1 from "../images/devcoach1.PNG";
+import devcoach2 from "../images/devcoach2.PNG";
+import tryble1 from "../images/tryble1.PNG";
+import tryble2 from "../images/tryble2.PNG";
 
-function Projects(props) {
+function Projects() {
   // const initial = {
   //   activeTab: 0
   // };
   const [tabs, setTabs] = useState(0);
-  console.log(tabs);
 
   const toggle = () => {
     if (tabs === 0) {
       return (
-        <div>
-          <h1>This is Zero</h1>
+        <div className="projects-grid">
+          <Card
+            className="projects-cards"
+            shadow={5}
+            // style={{
+            //   minWidth: "450px",
+            //   margin: "10px auto",
+            //   borderRadius: "5%"
+            // }}
+          >
+            <CardTitle
+              style={{
+                color: "grey",
+                height: "200px",
+                background: `url(${devcoach1}) center / cover`
+              }}
+            >
+              Dev-coach
+            </CardTitle>
+            <CardText>
+              Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
+              hhhhhh hhhhh huijngyhvyujb hujgyujhb
+            </CardText>
+            <CardActions border>
+              <Button colored> Github </Button>
+              <Button colored> Codepen </Button>
+              <Button colored> YOU </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          <Card className="projects-cards" shadow={5}>
+            <CardTitle
+              style={{
+                color: "#2dc68c",
+                height: "200px",
+                background: `url(${devcoach2}) center / cover`
+              }}
+            >
+              Tryble
+            </CardTitle>
+            <CardText>
+              Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
+              hhhhhh hhhhh huijngyhvyujb hujgyujhb
+            </CardText>
+            <CardActions border>
+              <Button colored> Github </Button>
+              <Button colored> Codepen </Button>
+              <Button colored> YOU </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          <Card className="projects-cards" shadow={5}>
+            <CardTitle
+              style={{
+                color: "#2dc68c",
+                height: "200px",
+                background: `url(${tryble1}) center / cover`
+              }}
+            >
+              Tryble
+            </CardTitle>
+            <CardText>
+              Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
+              hhhhhh hhhhh huijngyhvyujb hujgyujhb
+            </CardText>
+            <CardActions border>
+              <Button colored> Github </Button>
+              <Button colored> Codepen </Button>
+              <Button colored> YOU </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          <Card className="projects-cards" shadow={5}>
+            <CardTitle
+              style={{
+                color: "#2dc68c",
+                height: "200px",
+                background: `url(${tryble2}) center / cover`
+              }}
+            >
+              Tryble
+            </CardTitle>
+            <CardText>
+              Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
+              hhhhhh hhhhh huijngyhvyujb hujgyujhb
+            </CardText>
+            <CardActions border>
+              <Button colored> Github </Button>
+              <Button colored> Codepen </Button>
+              <Button colored> YOU </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
         </div>
       );
     } else if (tabs === 1) {
@@ -55,7 +169,11 @@ function Projects(props) {
         <Tab>SQL</Tab>
         <Tab>Python</Tab>
       </Tabs>
-      <section className="project-grids"> {toggle()} </section>
+      <Grid>
+        <Cell col={12}>
+          <div className="content">{toggle()}</div>
+        </Cell>
+      </Grid>
     </div>
   );
 }

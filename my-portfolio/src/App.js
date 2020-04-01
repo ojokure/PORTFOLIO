@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="demo-big-content">
       <Layout>
-        <Header className="header-color" title="Ojokure">
-          {/* <Header className="header-color" title="Ojokure" scroll> */}
+        {/* <Header className="header-color" title="Oladimeji Ojo"> */}
+        <Header className="header-color" title="Ojokure" scroll>
           <Navigation>
             <Link to="/resume">Resume</Link>
             <Link to="/projects">Projects</Link>
@@ -19,7 +19,7 @@ function App() {
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="Oladimeji Ojo">
           <Navigation>
             <Link to="/resume">Resume</Link>
             <Link to="/projects">Projects</Link>
