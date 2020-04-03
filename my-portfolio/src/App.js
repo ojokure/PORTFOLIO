@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Layout, Navigation, Header, Drawer, Content } from "react-mdl";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import Toggle from "./components/toggle";
 import { lightTheme, darkTheme } from "./components/theme";
 
 function App() {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState(getMode());
 
   const toggleMode = () => {
     if (mode === "light") {
@@ -16,6 +16,16 @@ function App() {
       setMode("light");
     }
   };
+
+  useEffect(() => {
+    localStorage.setItem("mode", JSON.stringify(mode));
+  }, [mode]);
+
+  function getMode() {
+    const savedMode = JSON.parse(localStorage.getItem("mode"));
+
+    return savedMode || "light";
+  }
 
   return (
     <div>

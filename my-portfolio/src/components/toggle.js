@@ -6,7 +6,8 @@ import { ReactComponent as SunIcon } from "../images/sun.svg";
 // import { lightTheme, darkTheme } from "./theme";
 
 const Toggle = ({ theme, toggleMode }) => {
-  const isLight = theme === "light";
+  console.log(theme);
+  const lightTheme = theme === "light";
   return (
     <ToggleButton onClick={toggleMode}>
       <SunIcon />
@@ -18,8 +19,7 @@ const Toggle = ({ theme, toggleMode }) => {
 export default Toggle;
 
 const ToggleButton = styled.button`
-  background: #fff;
-   /* ${({ theme }) => theme.gradient}; */
+  background:${({ theme }) => theme.gradient};
   /* border: 2px solid ${({ theme }) => theme.toggleBorder}; */
   border-radius: 30px;
   border-style: none;
@@ -38,17 +38,17 @@ const ToggleButton = styled.button`
     height: auto;
     width: 1.2rem;
     transition: all 0.3s linear;
-
-    // sun icon
+    
+    /* sun icon */
     &:first-child {
       transform: ${({ lightTheme }) =>
-        lightTheme ? "translateY(-100px)" : "translateY(0)"};
+        lightTheme ? "translateY(100px)" : "translateY(0)"};
     }
-
-    // moon icon
+    
+    /* moon icon */
     &:nth-child(2) {
-      transform: ${({ lightTheme }) =>
-        lightTheme ? "translateY(0)" : "translateY(100px)"};
+      transform: ${({ theme }) =>
+        !theme ? "translateY(0)" : "translateY(100px)"};
     }
   }
 `;

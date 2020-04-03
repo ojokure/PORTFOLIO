@@ -6,7 +6,7 @@ import Projects from "./projects";
 import Contact from "./contact";
 
 const Main = () => (
-  <Switch className="main">
+  <Switch>
     <Route exact path="/" component={LandingPage} />
     <Route path="/aboutme" component={About} />
     <Route path="/projects" component={Projects} />
