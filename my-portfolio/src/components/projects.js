@@ -18,24 +18,13 @@ import tryble1 from "../images/tryble1.PNG";
 import tryble2 from "../images/tryble2.PNG";
 
 function Projects() {
-  // const initial = {
-  //   activeTab: 0
-  // };
   const [tabs, setTabs] = useState(0);
 
   const toggle = () => {
     if (tabs === 0) {
       return (
         <div className="projects-grid">
-          <Card
-            className="projects-cards"
-            shadow={5}
-            // style={{
-            //   minWidth: "450px",
-            //   margin: "10px auto",
-            //   borderRadius: "5%"
-            // }}
-          >
+          <Card className="projects-cards" shadow={5}>
             <CardTitle
               style={{
                 color: "grey",
@@ -52,7 +41,7 @@ function Projects() {
               <Button colored> Codepen </Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
-              <IconButton name="share" />
+              {/* <IconButton name="share" /> */}
             </CardMenu>
           </Card>
           <Card className="projects-cards" shadow={5}>
@@ -74,7 +63,7 @@ function Projects() {
               <Button colored> Codepen </Button>
             </CardActions>
             <CardMenu style={{ color: "black" }}>
-              <IconButton name="share" />
+              {/* <IconButton name="share" /> */}
             </CardMenu>
           </Card>
           <Card className="projects-cards" shadow={5}>
@@ -99,7 +88,7 @@ function Projects() {
               {/* <IconButton name="share" /> */}
             </CardMenu>
           </Card>
-          <Card className="projects-cards" shadow={5}>
+          {/* <Card className="projects-cards" shadow={5}>
             <CardTitle
               style={{
                 color: "#2dc68c",
@@ -119,8 +108,8 @@ function Projects() {
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
               {/* <IconButton name="share" /> */}
-            </CardMenu>
-          </Card>
+          {/* </CardMenu> */}
+          {/* </Card> */}
         </div>
       );
     } else if (tabs === 1) {
@@ -158,9 +147,6 @@ function Projects() {
         ripple
       >
         <Tab>React</Tab>
-        <Tab>Angular</Tab>
-        <Tab>Mongo</Tab>
-        <Tab>SQL</Tab>
         <Tab>Python</Tab>
       </Tabs>
       <Grid>

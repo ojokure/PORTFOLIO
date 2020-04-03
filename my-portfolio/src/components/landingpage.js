@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid, Cell } from "react-mdl";
 import avatar from "../images/avatar.PNG";
 
 function LandingPage() {
+  // const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div style={{ width: "100%", margin: "auto" }}>
       <Grid className="landing-grid">
@@ -12,8 +14,8 @@ function LandingPage() {
             <h1> Full Stack Web Developer </h1>
             <hr />
             <p>
-              JS | React | Redux | React Native | Node JS | Express |
-              MongoDB/SQL | Python | Django
+              HTML/CSS | JS | React | Redux | React Native | Node JS | Express |
+              MongoDB/SQL | Python
             </p>
             <div className="social-links">
               {/* linkedin */}
