@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Grid, Cell } from "react-mdl";
 import avatar from "../images/avatar.PNG";
 
-function LandingPage() {
+function LandingPage({ mode }) {
   // const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div style={{ width: "100%", margin: "auto" }}>
-      <Grid className="landing-grid">
+      <Grid className={mode ? "dark-mode-grid" : "landing-grid"}>
         <Cell col={12}>
           <img src={avatar} alt="avatar" className="avatar-img" />
           <div className="banner-text">

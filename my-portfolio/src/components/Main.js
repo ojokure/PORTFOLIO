@@ -5,9 +5,13 @@ import About from "./aboutme";
 import Projects from "./projects";
 import Contact from "./contact";
 
-const Main = () => (
+const Main = ({ mode }) => (
   <Switch>
-    <Route exact path="/" component={LandingPage} />
+    <Route
+      exact
+      path="/"
+      render={(props) => <LandingPage {...props} mode={mode} />}
+    />
     <Route path="/aboutme" component={About} />
     <Route path="/projects" component={Projects} />
     <Route path="/contact" component={Contact} />

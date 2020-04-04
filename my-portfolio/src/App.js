@@ -51,7 +51,7 @@ function App() {
       <Layout>
         {/* <Header className="header-color" title="Oladimeji Ojo"  scroll> */}
         <Header
-          className={mode ? "header-color" : "dark-mode"}
+          className={mode ? "dark-mode-header" : "header-color"}
           title={
             <Link
               style={{
@@ -139,7 +139,7 @@ function App() {
         </Drawer>
         <Content>
           <div className="page-content" />
-          <Main />
+          <Main mode={mode} />
         </Content>
       </Layout>
     </div>
