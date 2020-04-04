@@ -9,22 +9,41 @@ import { lightTheme, darkTheme } from "./components/theme";
 function App() {
   const [mode, setMode] = useState(getMode());
 
-  const toggleMode = () => {
-    if (mode === "light") {
-      setMode("dark");
-    } else {
-      setMode("light");
-    }
-  };
+  // const toggleMode = () => {
+  //   if (mode === "light") {
+  //     setMode("dark");
+  //   } else {
+  //     setMode("light");
+  //   }
+  // };
 
   useEffect(() => {
-    localStorage.setItem("mode", JSON.stringify(mode));
+    localStorage.setItem("dark", JSON.stringify(mode));
   }, [mode]);
 
   function getMode() {
-    const savedMode = JSON.parse(localStorage.getItem("mode"));
+    const isReturningUser = "dark" in localStorage;
+    const savedMode = JSON.parse(localStorage.getItem("dark"));
+    const usePreferredColorScheme = getPrefColorScheme();
 
-    return savedMode || "light";
+    // If mode was save -> dark/light
+    if (isReturningUser) {
+      return savedMode;
+    }
+    // if preffered color scheme is dark -> dark
+    else if (usePreferredColorScheme) {
+      return true;
+    }
+    // otherwise -> light
+    else {
+      return false;
+    }
+  }
+
+  function getPrefColorScheme() {
+    if (!window.matchMedia) return;
+
+    return window.matchMedia("(prefer-color-scheme : dark)").matches;
   }
 
   return (
@@ -32,13 +51,13 @@ function App() {
       <Layout>
         {/* <Header className="header-color" title="Oladimeji Ojo"  scroll> */}
         <Header
-          className={mode === "dark" ? "dark-mode" : "header-color"}
+          className={mode ? "header-color" : "dark-mode"}
           title={
             <Link
               style={{
                 textDecoration: "none",
                 color: "white",
-                fontFamily: "Nunito"
+                fontFamily: "Nunito",
               }}
               to="/"
             >
@@ -50,11 +69,21 @@ function App() {
             <Link to="/projects">Projects</Link>
             <Link to="/aboutme">About Me</Link>
             <Link to="/contact">Contact</Link>
-
-            <Toggle
-              toggleMode={toggleMode}
-              theme={mode === "light" ? lightTheme : darkTheme}
-            />
+            <Toggle />
+            {/* <div className="toggle-container">
+              <span style={{ color: mode ? "grey" : "yellow" }}>☀︎</span>
+              <span className="toggle">
+                <input
+                  checked={mode}
+                  onChange={() => setMode((prevMode) => !prevMode)}
+                  type="checkbox"
+                  className="checkbox"
+                  id="checkbox"
+                />
+                <label htmlFor="checkbox" />
+              </span>
+              <span style={{ color: mode ? "slateblue" : "grey" }}>☾</span>
+            </div> */}
           </Navigation>
         </Header>
         <Drawer
@@ -64,7 +93,7 @@ function App() {
                 textDecoration: "none",
                 color: "black",
                 fontFamily: "Nunito",
-                fontWeight: "bold"
+                fontWeight: "bold",
               }}
               to="/"
             >
@@ -79,7 +108,7 @@ function App() {
                 textDecoration: "none",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "Nunito"
+                fontFamily: "Nunito",
               }}
             >
               Projects
@@ -90,7 +119,7 @@ function App() {
                 textDecoration: "none",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "Nunito"
+                fontFamily: "Nunito",
               }}
             >
               About Me
@@ -101,7 +130,7 @@ function App() {
                 textDecoration: "none",
                 color: "black",
                 fontWeight: "bold",
-                fontFamily: "Nunito"
+                fontFamily: "Nunito",
               }}
             >
               Contact

@@ -31,8 +31,8 @@ const ToggleButton = styled.button`
   overflow: hidden;
   padding: 0.5rem;
   position: relative;
-  width: 4rem;
-  height: 2.2rem;
+  width: 3rem;
+  height: 1.5rem;
 
   svg {
     height: auto;
