@@ -1,0 +1,259 @@
+.header-color {
+  background: #34e89e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0f3443,
+    #34e89e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f3443,
+    #34e89e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.main {
+  background: #34e89e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0f3443,
+    #34e89e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f3443,
+    #34e89e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dark-mode-grid {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* color: white; */
+}
+
+.dark-mode-header {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.landing-grid {
+  background: #34e89e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0f3443,
+    #34e89e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f3443,
+    #34e89e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.toggle {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"].checkbox {
+  width: 40px;
+  height: 10px;
+  background: #555;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+}
+
+input[type="checkbox"].checkbox:checked + label {
+  left: 30px;
+}
+
+input[type="checkbox"].checkbox:focus-visible {
+  outline: solid 2px white;
+}
+
+input[type="checkbox"].checkbox + label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 2px;
+  background: #fff;
+  opacity: 0.9;
+  background-color: cyan;
+}
+
+.toggle-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.toggle-container > span {
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+
+.toggle-container > span:last-child {
+  margin-top: 5px;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  /* background-color: black; */
+}
+
+.projects-grid-dark-mode {
+  display: flex;
+  flex-wrap: wrap;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 360px;
+  /* height: 300px; */
+  margin: 10px auto;
+  overflow: visible;
+}
+
+.projects-cards:hover {
+  transform: scale(1.4);
+  border-radius: 9px;
+  /* transform-origin: bottom; */
+  transition: all 0.5s ease;
+}
+
+.contact-body {
+  margin: auto;
+  /* background: #c3dcff; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 530px;
+  background: white;
+  color: black;
+  /* border: 2px solid #27a97e; */
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: "Nunito", sans-serif;
+}
+
+.contact-grid p {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  /* border-top: 5px dotted black; */
+  width: 50%;
+  margin: auto;
+}
+.contact-list i {
+  font-size: 26px;
+  padding-right: 2rem;
+  padding-left: 9rem;
+}
+
+.avatar-img {
+  height: 300px;
+  padding-top: 7em;
+  border-radius: 50%;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: 0.6;
+  width: 65%;
+  margin: auto;
+  border-radius: 10px;
+  font-family: Nunito;
+}
+
+.banner-text h1 {
+  font-size: 56px;
+  color: white;
+  font-weight: bold;
+  font-family: Nunito;
+}
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+.banner-text p {
+  color: white;
+  padding: 1em;
+  font-family: Nunito;
+  font-size: 20px;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 50%;
+}
+.social-links i {
+  font-size: 4em;
+  color: white;
+  padding: 8px;
+}
