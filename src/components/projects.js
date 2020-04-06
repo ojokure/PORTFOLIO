@@ -36,7 +36,7 @@ function Projects({ mode }) {
                 background: `url(${devcoach1}) center / cover`,
               }}
             ></CardTitle>
-            <CardText style={{ color: "black" }}>
+            <CardText>
               DevCoach provides a platform for junior developers to train and
               improve their skills efficiently through focused support and
               feedback.
@@ -90,7 +90,7 @@ function Projects({ mode }) {
                 background: `url(${devcoach2}) center / cover`,
               }}
             ></CardTitle>
-            <CardText style={{ color: "black" }}>
+            <CardText>
               Devs can sign up, book coaches, communicate with them over instant
               messaging & video chat, and work collaboratively(live share) on
               coding challenges.
@@ -144,7 +144,7 @@ function Projects({ mode }) {
                 background: `url(${tryble1}) center / cover`,
               }}
             ></CardTitle>
-            <CardText style={{ color: "black" }}>
+            <CardText>
               Tryble is a platform that allows you to collaborate effectively on
               projects with the tools and support you need through a like minded
               community.
@@ -189,26 +189,47 @@ function Projects({ mode }) {
       );
     } else if (tabs === 1) {
       return (
-        <div>
-          <h1>This is One</h1>
-        </div>
-      );
-    } else if (tabs === 2) {
-      return (
-        <div>
-          <h1>This is Two</h1>
-        </div>
-      );
-    } else if (tabs === 3) {
-      return (
-        <div>
-          <h1>This is Three</h1>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <h1>This is Four</h1>
+        <div className="projects-grid">
+          <Card
+            className="projects-cards"
+            shadow={5}
+            style={{ borderRadius: "9px" }}
+          >
+            <CardTitle
+              style={{
+                color: "grey",
+                height: "230px",
+                background: `url(${devcoach1}) center / cover`,
+              }}
+            ></CardTitle>
+            <CardText>
+              DevCoach provides a platform for junior developers to train and
+              improve their skills efficiently through focused support and
+              feedback.
+            </CardText>
+            <CardActions border>
+              <a
+                href="https://github.com/LABS-EU3/quality_hub_frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fa fa-github"
+                  aria-hidden="true"
+                  style={{
+                    fontSize: "25px",
+                    paddingRight: "15px",
+                    color: "#185c57",
+                  }}
+                ></i>
+              </a>
+
+              {/* <Button colored> Codepen </Button> */}
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              {/* <IconButton name="share" /> */}
+            </CardMenu>
+          </Card>
         </div>
       );
     }
