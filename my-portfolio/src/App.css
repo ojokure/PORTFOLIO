@@ -140,17 +140,30 @@ input[type="checkbox"].checkbox + label {
 
 .projects-grid {
   display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  /* background-color: black; */
+}
+
+.projects-grid-dark-mode {
+  display: flex;
   flex-wrap: wrap;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
 }
 
 .projects-cards {
   display: flex;
   flex-wrap: wrap;
-  min-width: 450px;
+  min-width: 360px;
   /* height: 300px; */
   margin: 10px auto;
-  border-radius: 9px;
-  /* overflow: hidden; */
+  overflow: visible;
 }
 
 .projects-cards:hover {
@@ -196,8 +209,9 @@ input[type="checkbox"].checkbox + label {
   margin: auto;
 }
 .contact-list i {
-  font-size: 66px;
-  padding-right: 5rem;
+  font-size: 26px;
+  padding-right: 2rem;
+  padding-left: 9rem;
 }
 
 .avatar-img {

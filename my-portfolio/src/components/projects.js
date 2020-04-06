@@ -10,26 +10,30 @@ import {
   Button,
   CardMenu,
   CardText,
-  IconButton
+  IconButton,
 } from "react-mdl";
-import devcoach1 from "../images/devcoach1.PNG";
-import devcoach2 from "../images/devcoach2.PNG";
+import devcoach1 from "../images/devcoach4.PNG";
+import devcoach2 from "../images/devcoach1.PNG";
 import tryble1 from "../images/tryble1.PNG";
 import tryble2 from "../images/tryble2.PNG";
 
-function Projects() {
+function Projects({ mode }) {
   const [tabs, setTabs] = useState(0);
 
   const toggle = () => {
     if (tabs === 0) {
       return (
         <div className="projects-grid">
-          <Card className="projects-cards" shadow={5}>
+          <Card
+            className="projects-cards"
+            shadow={5}
+            style={{ borderRadius: "9px" }}
+          >
             <CardTitle
               style={{
                 color: "grey",
-                height: "200px",
-                background: `url(${devcoach1}) center / cover`
+                height: "230px",
+                background: `url(${devcoach1}) center / cover`,
               }}
             ></CardTitle>
             <CardText>
@@ -44,16 +48,18 @@ function Projects() {
               {/* <IconButton name="share" /> */}
             </CardMenu>
           </Card>
-          <Card className="projects-cards" shadow={5}>
+          <Card
+            className="projects-cards"
+            shadow={5}
+            style={{ borderRadius: "9px" }}
+          >
             <CardTitle
               style={{
                 color: "#2dc68c",
-                height: "200px",
-                background: `url(${devcoach2}) center / cover`
+                height: "230px",
+                background: `url(${devcoach2}) center / cover`,
               }}
-            >
-              Tryble
-            </CardTitle>
+            ></CardTitle>
             <CardText>
               Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
               hhhhhh hhhhh huijngyhvyujb hujgyujhb
@@ -66,16 +72,18 @@ function Projects() {
               {/* <IconButton name="share" /> */}
             </CardMenu>
           </Card>
-          <Card className="projects-cards" shadow={5}>
+          <Card
+            className="projects-cards"
+            shadow={5}
+            style={{ borderRadius: "9px" }}
+          >
             <CardTitle
               style={{
                 color: "#2dc68c",
-                height: "200px",
-                background: `url(${tryble1}) center / cover`
+                height: "230px",
+                background: `url(${tryble1}) center / cover`,
               }}
-            >
-              Tryble
-            </CardTitle>
+            ></CardTitle>
             <CardText>
               Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
               hhhhhh hhhhh huijngyhvyujb hujgyujhb
@@ -143,7 +151,7 @@ function Projects() {
     <div className="category-tabs">
       <Tabs
         activeTab={tabs.activeTab}
-        onChange={tabId => setTabs(prevState => tabId)}
+        onChange={(tabId) => setTabs((prevState) => tabId)}
         ripple
       >
         <Tab>React</Tab>

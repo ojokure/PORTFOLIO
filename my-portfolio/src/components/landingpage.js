@@ -43,7 +43,7 @@ function LandingPage({ mode }) {
                 <i className="fa fa-twitter-square" aria-hidden="true"></i>
               </a>
               {/* email */}
-              <a href="/" target="_blank" rel="noopener noreferrer">
+              <a href="/contact" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-envelope-square" aria-hidden="true"></i>
               </a>
             </div>

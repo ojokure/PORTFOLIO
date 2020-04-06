@@ -12,8 +12,11 @@ const Main = ({ mode }) => (
       path="/"
       render={(props) => <LandingPage {...props} mode={mode} />}
     />
+    <Route
+      path="/projects"
+      render={(props) => <Projects {...props} mode={mode} />}
+    />
     <Route path="/aboutme" component={About} />
-    <Route path="/projects" component={Projects} />
     <Route path="/contact" component={Contact} />
   </Switch>
 );

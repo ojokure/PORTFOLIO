@@ -42,30 +42,30 @@ function Contact() {
 
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label></Form.Label>
-                <Form.Control as="textarea" rows="3" placeholder="Message" />
+                <Form.Control
+                  as="textarea"
+                  rows="3"
+                  placeholder="Message"
+                  style={{ minHeight: "180px" }}
+                />
               </Form.Group>
             </Form>
-            <Button variant="secondary" type="submit">
-              Submit
+            <Button
+              variant="secondary"
+              type="submit"
+              style={{ width: "80px", height: "30px" }}
+            >
+              Send
             </Button>
           </MainStyled>
         </Cell>
         <Cell col={6}>
-          <h2>Contact Me</h2>
-          {/* <hr /> */}
+          <h2>Contact</h2>
           <div className="contact-list">
             <List>
               <ListItem>
                 <ListItemContent
-                  style={{ fontSize: "30px", fontFamily: "Anton" }}
-                >
-                  <i className="fa fa-phone-square" aria-hidden="true" />
-                  (+234) 803 693 8179
-                </ListItemContent>
-              </ListItem>
-              <ListItem>
-                <ListItemContent
-                  style={{ fontSize: "30px", fontFamily: "Anton" }}
+                  style={{ fontSize: "20px", fontFamily: "Nunito" }}
                 >
                   <i className="fa fa-envelope" aria-hidden="true" />
                   ojokuredim@gmail.com
@@ -73,9 +73,26 @@ function Contact() {
               </ListItem>
               <ListItem>
                 <ListItemContent
-                  style={{ fontSize: "30px", fontFamily: "Anton" }}
+                  style={{ fontSize: "20px", fontFamily: "Nunito" }}
                 >
-                  <i className="fa fa-twitter-square" aria-hidden="true" />
+                  <i className="fa fa-phone" aria-hidden="true" />
+                  (+234) 803 693 8179
+                </ListItemContent>
+              </ListItem>
+
+              <ListItem>
+                <ListItemContent
+                  style={{ fontSize: "20px", fontFamily: "Nunito" }}
+                >
+                  <i className="fa fa-linkedin" aria-hidden="true" />
+                  oladimejiojo
+                </ListItemContent>
+              </ListItem>
+              <ListItem>
+                <ListItemContent
+                  style={{ fontSize: "20px", fontFamily: "Nunito" }}
+                >
+                  <i className="fa fa-twitter" aria-hidden="true" />
                   ovobeckford2
                 </ListItemContent>
               </ListItem>
