@@ -36,13 +36,43 @@ function Projects({ mode }) {
                 background: `url(${devcoach1}) center / cover`,
               }}
             ></CardTitle>
-            <CardText>
-              Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
-              hhhhhh hhhhh huijngyhvyujb hujgyujhb
+            <CardText style={{ color: "black" }}>
+              DevCoach provides a platform for junior developers to train and
+              improve their skills efficiently through focused support and
+              feedback.
             </CardText>
             <CardActions border>
-              <Button colored> Github </Button>
-              <Button colored> Codepen </Button>
+              <a
+                href="https://github.com/LABS-EU3/quality_hub_frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fa fa-github"
+                  aria-hidden="true"
+                  style={{
+                    fontSize: "25px",
+                    paddingRight: "15px",
+                    color: "#185c57",
+                  }}
+                ></i>
+              </a>
+              <a
+                href="https://dev-coach.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fa fa-globe"
+                  aria-hidden="true"
+                  style={{
+                    fontSize: "25px",
+                    paddingRight: "15px",
+                    color: "#185c57",
+                  }}
+                ></i>
+              </a>
+              {/* <Button colored> Codepen </Button> */}
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
               {/* <IconButton name="share" /> */}
@@ -60,13 +90,43 @@ function Projects({ mode }) {
                 background: `url(${devcoach2}) center / cover`,
               }}
             ></CardTitle>
-            <CardText>
-              Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
-              hhhhhh hhhhh huijngyhvyujb hujgyujhb
+            <CardText style={{ color: "black" }}>
+              Devs can sign up, book coaches, communicate with them over instant
+              messaging & video chat, and work collaboratively(live share) on
+              coding challenges.
             </CardText>
             <CardActions border>
-              <Button colored> Github </Button>
-              <Button colored> Codepen </Button>
+              <a
+                href="https://github.com/LABS-EU3/quality_hub_frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fa fa-github"
+                  aria-hidden="true"
+                  style={{
+                    fontSize: "25px",
+                    paddingRight: "15px",
+                    color: "#185c57",
+                    alignItems: "center",
+                  }}
+                ></i>
+              </a>
+              <a
+                href="https://www.dev-coach.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fa fa-globe"
+                  aria-hidden="true"
+                  style={{
+                    fontSize: "25px",
+                    paddingRight: "15px",
+                    color: "#185c57",
+                  }}
+                ></i>
+              </a>
             </CardActions>
             <CardMenu style={{ color: "black" }}>
               {/* <IconButton name="share" /> */}
@@ -84,40 +144,47 @@ function Projects({ mode }) {
                 background: `url(${tryble1}) center / cover`,
               }}
             ></CardTitle>
-            <CardText>
-              Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
-              hhhhhh hhhhh huijngyhvyujb hujgyujhb
+            <CardText style={{ color: "black" }}>
+              Tryble is a platform that allows you to collaborate effectively on
+              projects with the tools and support you need through a like minded
+              community.
             </CardText>
             <CardActions border>
-              <Button colored> Github </Button>
-              <Button colored> Codepen </Button>
+              <a
+                href="https://github.com/Tryble"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fa fa-github"
+                  aria-hidden="true"
+                  style={{
+                    fontSize: "25px",
+                    paddingRight: "15px",
+                    color: "#185c57",
+                  }}
+                ></i>
+              </a>
+              <a
+                href="https://tryble.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fa fa-globe"
+                  aria-hidden="true"
+                  style={{
+                    fontSize: "25px",
+                    paddingRight: "15px",
+                    color: "#185c57",
+                  }}
+                ></i>
+              </a>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
               {/* <IconButton name="share" /> */}
             </CardMenu>
           </Card>
-          {/* <Card className="projects-cards" shadow={5}>
-            <CardTitle
-              style={{
-                color: "#2dc68c",
-                height: "200px",
-                background: `url(${tryble2}) center / cover`
-              }}
-            >
-              Tryble
-            </CardTitle>
-            <CardText>
-              Lorem Ipsum looojhhhhhhhhhh hhhhh hhhhhh hhhhhh hhhhhh hhhhhh
-              hhhhhh hhhhh huijngyhvyujb hujgyujhb
-            </CardText>
-            <CardActions border>
-              <Button colored> Github </Button>
-              <Button colored> Codepen </Button>
-            </CardActions>
-            <CardMenu style={{ color: "#fff" }}>
-              {/* <IconButton name="share" /> */}
-          {/* </CardMenu> */}
-          {/* </Card> */}
         </div>
       );
     } else if (tabs === 1) {
