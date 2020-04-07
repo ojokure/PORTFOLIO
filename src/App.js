@@ -67,7 +67,7 @@ function App() {
         >
           <Navigation>
             <Link to="/projects">Projects</Link>
-            <Link to="/aboutme">About Me</Link>
+            <Link to="/aboutme">About</Link>
             <Link to="/contact">Contact</Link>
             <Toggle />
             {/* <div className="toggle-container">
