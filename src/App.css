@@ -218,7 +218,7 @@ input[type="checkbox"].checkbox + label {
 p,
 h1 {
   font-family: "Nunito";
-  max-width: 600px;
+  /* max-width: 600px; */
   font-size: 18px;
 }
 
@@ -241,7 +241,7 @@ h1 {
 
 .banner-text {
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.5;
   width: 65%;
   margin: auto;
   border-radius: 10px;
@@ -249,9 +249,9 @@ h1 {
 }
 
 .banner-text h1 {
-  font-size: 56px;
+  font-size: 36px;
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: Nunito;
 }
 .banner-text hr {

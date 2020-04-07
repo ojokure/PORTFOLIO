@@ -11,7 +11,10 @@ function LandingPage({ mode }) {
         <Cell col={12}>
           <img src={avatar1} alt="avatar" className="avatar-img" />
           <div className="banner-text">
-            <h1> Full Stack Web Developer </h1>
+            <h1>
+              {" "}
+              Hi, my name is Oladimeji Ojo, I'm a Full Stack Web Developer
+            </h1>
             <hr />
             <p>
               HTML/CSS | JS | React | Redux | Node JS | Express | MongoDB/SQL |

@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="about-grid">
       <Grid>
-        <Cell col={6}>
+        <Cell col={6} style={{ maxWidth: "650px" }}>
           <article>
             <h1 style={{ marginTop: "38px" }}> About Me </h1>
             I've always sought out opportunities and challenges that help me

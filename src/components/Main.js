@@ -16,8 +16,14 @@ const Main = ({ mode }) => (
       path="/projects"
       render={(props) => <Projects {...props} mode={mode} />}
     />
-    <Route path="/aboutme" component={About} />
-    <Route path="/contact" component={Contact} />
+    <Route
+      path="/aboutme"
+      render={(props) => <About {...props} mode={mode} />}
+    />
+    <Route
+      path="/contact"
+      render={(props) => <Contact {...props} mode={mode} />}
+    />
   </Switch>
 );
 
