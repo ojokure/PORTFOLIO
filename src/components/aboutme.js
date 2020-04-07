@@ -8,19 +8,24 @@ function About() {
     <div className="about-grid">
       <Grid>
         <Cell col={6}>
-          <h1> About Me </h1>
-          In publishing and graphic design, Lorem ipsum is a placeholder text
-          <br />
-          commonly used to demonstrate the visual form of a document or a{" "}
-          <p>
-            typeface without relying on meaningful content. Lorem ipsum may be
-          </p>
-          used before final copy is available, but it may also be used to
-          temporarily
-          <br />
-          replace copy in a process called greeking, which allows designers to
-          consider <br />
-          form without the meaning of the text influencing the design.
+          <article>
+            <h1 style={{ marginTop: "38px" }}> About Me </h1>
+            I've always sought out opportunities and challenges that help me
+            understand the inner-workings of things and <br />
+            solve problems.
+            <p style={{ marginTop: "6px", fontSize: "18px" }}>
+              Although my professional path has taken a few twist and turns
+              because of that - from a trained field Geologist to a Banker in a
+              reputable financial institution for a little over two years - I
+              never lost my passion to help others and make lifes better in my
+              own possible way no matter how little and that's why I'm excited
+              to make a big impact in the tech world.
+            </p>
+            <p style={{ marginTop: "6px", fontSize: "18px" }}>
+              When I'm not coding or reading, you'll find me sprinting or
+              working out in the gym.
+            </p>
+          </article>
         </Cell>
         <Cell col={6}>
           <img

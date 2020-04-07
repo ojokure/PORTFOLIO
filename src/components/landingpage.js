@@ -18,7 +18,6 @@ function LandingPage({ mode }) {
               Python | Django
             </p>
             <div className="social-links">
-              {/* linkedin */}
               <a
                 href="https://www.linkedin.com/in/oladimejiojo/"
                 target="_blank"
@@ -26,7 +25,6 @@ function LandingPage({ mode }) {
               >
                 <i className="fa fa-linkedin-square" aria-hidden="true"></i>
               </a>
-              {/* github */}
               <a
                 href="https://github.com/ojokure"
                 target="_blank"
@@ -34,7 +32,6 @@ function LandingPage({ mode }) {
               >
                 <i className="fa fa-github-square" aria-hidden="true"></i>
               </a>
-              {/* twitter */}
               <a
                 href="https://twitter.com/ovobeckford2"
                 target="_blank"
@@ -42,7 +39,6 @@ function LandingPage({ mode }) {
               >
                 <i className="fa fa-twitter-square" aria-hidden="true"></i>
               </a>
-              {/* email */}
               <a href="/contact" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-envelope-square" aria-hidden="true"></i>
               </a>
