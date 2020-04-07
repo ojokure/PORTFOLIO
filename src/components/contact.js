@@ -8,7 +8,7 @@ function Contact() {
   return (
     <div className="contact-body">
       <Grid className="contact-grid">
-        <Cell col={6}>
+        <Cell col={6} className="contact-form">
           <h2> Send me an email </h2>
           <MainStyled>
             <Form>
@@ -55,16 +55,36 @@ function Contact() {
                 <ListItemContent
                   style={{ fontSize: "20px", fontFamily: "Nunito" }}
                 >
-                  <i className="fa fa-envelope" aria-hidden="true" />
-                  ojokuredim@gmail.com
+                  <a href="#" rel="noopener noreferrer">
+                    <i
+                      className="fa fa-envelope"
+                      aria-hidden="true"
+                      style={{
+                        color: "grey",
+                      }}
+                    ></i>
+                  </a>
+                  <span className="contact-text"> ojokuredim@gmail.com </span>
                 </ListItemContent>
               </ListItem>
               <ListItem>
                 <ListItemContent
                   style={{ fontSize: "20px", fontFamily: "Nunito" }}
                 >
-                  <i className="fa fa-github" aria-hidden="true" />
-                  github.com/ojokure
+                  <a
+                    href="https://github.com/ojokure"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      className="fa fa-github"
+                      aria-hidden="true"
+                      style={{
+                        color: "grey",
+                      }}
+                    ></i>
+                  </a>{" "}
+                  <span className="contact-text">github.com/ojokure</span>
                 </ListItemContent>
               </ListItem>
 
@@ -72,16 +92,40 @@ function Contact() {
                 <ListItemContent
                   style={{ fontSize: "20px", fontFamily: "Nunito" }}
                 >
-                  <i className="fa fa-linkedin" aria-hidden="true" />
-                  oladimejiojo
+                  <a
+                    href="https://www.linkedin.com/in/oladimejiojo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      className="fa fa-linkedin"
+                      aria-hidden="true"
+                      style={{
+                        color: "grey",
+                      }}
+                    ></i>
+                  </a>
+                  <span className="contact-text">oladimejiojo</span>
                 </ListItemContent>
               </ListItem>
               <ListItem>
                 <ListItemContent
                   style={{ fontSize: "20px", fontFamily: "Nunito" }}
                 >
-                  <i className="fa fa-twitter" aria-hidden="true" />
-                  ovobeckford2
+                  <a
+                    href="https://twitter.com/ovobeckford2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      className="fa fa-twitter"
+                      aria-hidden="true"
+                      style={{
+                        color: "grey",
+                      }}
+                    ></i>
+                  </a>{" "}
+                  <span className="contact-text">ovobeckford2</span>
                 </ListItemContent>
               </ListItem>
             </List>
