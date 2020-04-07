@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grid, Cell } from "react-mdl";
-import avatar from "../images/avatar.PNG";
+import avatar1 from "../images/avatar1.png";
 
 function LandingPage({ mode }) {
   // const [darkMode, setDarkMode] = useState(false);
@@ -9,13 +9,13 @@ function LandingPage({ mode }) {
     <div style={{ width: "100%", margin: "auto" }}>
       <Grid className={mode ? "dark-mode-grid" : "landing-grid"}>
         <Cell col={12}>
-          <img src={avatar} alt="avatar" className="avatar-img" />
+          <img src={avatar1} alt="avatar" className="avatar-img" />
           <div className="banner-text">
             <h1> Full Stack Web Developer </h1>
             <hr />
             <p>
-              HTML/CSS | JS | React | Redux | React Native | Node JS | Express |
-              MongoDB/SQL | Python
+              HTML/CSS | JS | React | Redux | Node JS | Express | MongoDB/SQL |
+              Python | Django
             </p>
             <div className="social-links">
               {/* linkedin */}
