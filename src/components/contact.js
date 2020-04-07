@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
-import { Button, FormGroup, FormControl, Col } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import styled from "styled-components";
 
