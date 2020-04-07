@@ -5,21 +5,10 @@ import avatar2 from "../images/avatar2.PNG";
 
 function About() {
   return (
-    <div
-      style={{
-        margin: "auto",
-        // position: "fixed",
-        width: "100%",
-        height: "100px",
-        justifyContent: "center",
-        paddingTop: "2rem",
-        paddingLeft: "5rem",
-        fontFamily: "Nunito",
-      }}
-    >
+    <div className="about-grid">
       <Grid>
         <Cell col={6}>
-          <h2> About Me </h2>
+          <h1> About Me </h1>
           In publishing and graphic design, Lorem ipsum is a placeholder text
           <br />
           commonly used to demonstrate the visual form of a document or a{" "}
