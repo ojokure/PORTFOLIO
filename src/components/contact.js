@@ -17,7 +17,7 @@ function Contact() {
                   <Form.Control placeholder="Name" />
                 </Col>
                 <Col>
-                  <Form.Control placeholder="Email" />
+                  <Form.Control placeholder="Your Email" />
                 </Col>
               </Form.Row>
               <Form.Group
