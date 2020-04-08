@@ -10,11 +10,10 @@ function Contact() {
     name: "",
     senderemail: "",
     subject: "",
-    message: "",
+    text: "",
   };
 
   const [contactForm, setContactForm] = useState(initialForm);
-  console.log(contactForm);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,6 +22,21 @@ function Contact() {
       ...prevForm,
       [name]: value,
     }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:5000/email", contactForm)
+      // console
+      //   .log(contactForm)
+      .then((res) => {
+        console.log(res.data);
+        setContactForm(initialForm);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   };
   return (
     <div className="contact-body">
@@ -65,10 +79,10 @@ function Contact() {
                 <Form.Control
                   as="textarea"
                   rows="3"
-                  name="message"
+                  name="text"
                   placeholder="Message"
                   style={{ minHeight: "180px" }}
-                  value={contactForm.message}
+                  value={contactForm.text}
                 />
               </Form.Group>
             </Form>
@@ -76,6 +90,7 @@ function Contact() {
               variant="secondary"
               type="submit"
               style={{ width: "80px", height: "30px" }}
+              onClick={handleSubmit}
             >
               Send
             </Button>
