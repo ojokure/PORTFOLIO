@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Grid, Cell } from "react-mdl";
 import avatar2 from "../images/avatar2.PNG";
@@ -17,7 +17,7 @@ function About() {
               Although my professional path has taken a few twist and turns
               because of that - from a trained field Geologist to a Banker in a
               reputable financial institution for a little over two years - I
-              never lost my passion to help others and make lifes better in my
+              never lost my passion to help others and make lives better in my
               own possible way no matter how little and that's why I'm excited
               to make a big impact in the tech world.
             </p>
@@ -32,6 +32,7 @@ function About() {
             src={avatar2}
             alt="avatar2"
             style={{ borderRadius: "10%", marginTop: "40px" }}
+            className="about-img"
           />
         </Cell>
       </Grid>
