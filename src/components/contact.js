@@ -1,23 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 import { Button, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import styled from "styled-components";
+import axios from "axios";
 
 function Contact() {
+  const initialForm = {
+    name: "",
+    senderemail: "",
+    subject: "",
+    message: "",
+  };
+
+  const [contactForm, setContactForm] = useState(initialForm);
+  console.log(contactForm);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setContactForm((prevForm) => ({
+      ...prevForm,
+      [name]: value,
+    }));
+  };
   return (
     <div className="contact-body">
       <Grid className="contact-grid">
         <Cell col={6} className="contact-form">
           <h2> Send me an email </h2>
           <MainStyled>
-            <Form>
+            <Form onChange={handleChange}>
               <Form.Row>
                 <Col>
-                  <Form.Control placeholder="Name" />
+                  <Form.Control
+                    placeholder="Name"
+                    name="name"
+                    value={contactForm.name}
+                  />
                 </Col>
                 <Col>
-                  <Form.Control placeholder="Your Email" />
+                  <Form.Control
+                    name="senderemail"
+                    placeholder="Your Email"
+                    value={contactForm.senderemail}
+                  />
                 </Col>
               </Form.Row>
               <Form.Group
@@ -25,7 +52,12 @@ function Contact() {
                 placeholder="Subject"
               >
                 <Form.Label></Form.Label>
-                <Form.Control type="email" placeholder="Subject" />
+                <Form.Control
+                  name="subject"
+                  type="text"
+                  placeholder="Subject"
+                  value={contactForm.subject}
+                />
               </Form.Group>
 
               <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -33,8 +65,10 @@ function Contact() {
                 <Form.Control
                   as="textarea"
                   rows="3"
+                  name="message"
                   placeholder="Message"
                   style={{ minHeight: "180px" }}
+                  value={contactForm.message}
                 />
               </Form.Group>
             </Form>
