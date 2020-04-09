@@ -14,7 +14,7 @@ function About() {
             understand the inner-workings of things and <br />
             solve problems.
             <p style={{ marginTop: "6px", fontSize: "18px" }}>
-              Although my professional path has taken a few twist and turns
+              Although my professional path has taken a few twists and turns
               because of that - from a trained field Geologist to a Banker in a
               reputable financial institution for a little over two years - I
               never lost my passion to help others and make lives better in my

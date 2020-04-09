@@ -349,3 +349,12 @@ h1 {
     transition: all 0.5s ease;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 120px;
+    margin: 8px auto;
+  }
+}
