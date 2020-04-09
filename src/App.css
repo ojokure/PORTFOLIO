@@ -310,6 +310,14 @@ h1 {
     align-items: center;
     margin-right: 55px;
   }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between;
+    align-content: center;
+    margin: auto; */
+  }
   .social-links i {
     font-size: 2em;
     color: white;
@@ -354,7 +362,12 @@ h1 {
   .projects-cards {
     display: flex;
     flex-wrap: wrap;
-    width: 120px;
+    width: 145px;
     margin: 8px auto;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
   }
 }
