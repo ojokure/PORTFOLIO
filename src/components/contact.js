@@ -4,6 +4,7 @@ import { Button, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import styled from "styled-components";
 import axios from "axios";
+import Notification from "../utils/notification";
 
 function Contact() {
   const initialForm = {
@@ -13,7 +14,14 @@ function Contact() {
     text: "",
   };
 
+  const initialNotify = {
+    success: false,
+    error: false,
+    info: false,
+  };
+
   const [contactForm, setContactForm] = useState(initialForm);
+  const [notify, setNotify] = useState(initialNotify);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +29,15 @@ function Contact() {
     setContactForm((prevForm) => ({
       ...prevForm,
       [name]: value,
+    }));
+  };
+
+  const closeMessage = () => {
+    setNotify((prevNotify) => ({
+      ...prevNotify,
+      success: false,
+      error: false,
+      info: false,
     }));
   };
 
@@ -32,9 +49,12 @@ function Contact() {
       //   .log(contactForm)
       .then((res) => {
         console.log(res.data);
+
         setContactForm(initialForm);
+        setNotify((prevNotify) => ({ ...prevNotify, success: true }));
       })
       .catch((error) => {
+        setNotify((prevNotify) => ({ ...prevNotify, error: true }));
         console.log(error.message);
       });
   };
@@ -79,10 +99,10 @@ function Contact() {
                 <Form.Control
                   as="textarea"
                   rows="3"
-                  name="text"
+                  name="message"
                   placeholder="Message"
                   style={{ minHeight: "180px" }}
-                  value={contactForm.text}
+                  value={contactForm.message}
                 />
               </Form.Group>
             </Form>
@@ -181,6 +201,19 @@ function Contact() {
           </div>
         </Cell>
       </Grid>
+      <Notification
+        onClose={closeMessage}
+        variant="success"
+        message="Sent! Thank you for writing me :slightly_smiling_face:"
+        open={notify.success}
+      />
+
+      <Notification
+        onClose={closeMessage}
+        variant="error"
+        message="Ooops! Please try again"
+        open={notify.error}
+      />
     </div>
   );
 }

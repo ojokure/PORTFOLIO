@@ -362,7 +362,7 @@ h1 {
   .projects-cards {
     display: flex;
     flex-wrap: wrap;
-    width: 145px;
+    width: 165px;
     margin: 8px auto;
   }
 
