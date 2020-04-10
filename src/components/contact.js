@@ -11,7 +11,7 @@ function Contact() {
     name: "",
     senderemail: "",
     subject: "",
-    text: "",
+    message: "",
   };
 
   const initialNotify = {
@@ -44,18 +44,21 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/email", contactForm)
-      // console
-      //   .log(contactForm)
-      .then((res) => {
-        console.log(res.data);
+      .post("https://porf-server.herokuapp.com/email", contactForm)
 
+      .then((res) => {
+        debugger;
+        console.log(res.data);
         setContactForm(initialForm);
         setNotify((prevNotify) => ({ ...prevNotify, success: true }));
       })
       .catch((error) => {
-        setNotify((prevNotify) => ({ ...prevNotify, error: true }));
-        console.log(error.message);
+        console.log(error.response.data.message);
+        debugger;
+        setNotify((prevNotify) => ({
+          ...prevNotify,
+          error: error.response.data.message,
+        }));
       });
   };
   return (
@@ -74,11 +77,15 @@ function Contact() {
                   />
                 </Col>
                 <Col>
-                  <Form.Control
-                    name="senderemail"
-                    placeholder="Your Email"
-                    value={contactForm.senderemail}
-                  />
+                  <Form.Group controlId="formBasicEmail">
+                    <Form.Control
+                      name="senderemail"
+                      placeholder="Your Email"
+                      value={contactForm.senderemail}
+                      required="True"
+                      type="email"
+                    />
+                  </Form.Group>
                 </Col>
               </Form.Row>
               <Form.Group
@@ -204,14 +211,14 @@ function Contact() {
       <Notification
         onClose={closeMessage}
         variant="success"
-        message="Sent! Thank you for writing me :slightly_smiling_face:"
+        message="Sent! Thank you for writing me ❤"
         open={notify.success}
       />
 
       <Notification
         onClose={closeMessage}
         variant="error"
-        message="Oops!  Please try again"
+        message={notify.error}
         open={notify.error}
       />
     </div>
