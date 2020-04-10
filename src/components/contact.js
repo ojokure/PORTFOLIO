@@ -100,7 +100,7 @@ function Contact() {
                   as="textarea"
                   rows="3"
                   name="message"
-                  placeholder="Message"
+                  placeholder="Please type your message here. . . ."
                   style={{ minHeight: "180px" }}
                   value={contactForm.message}
                 />
@@ -211,7 +211,7 @@ function Contact() {
       <Notification
         onClose={closeMessage}
         variant="error"
-        message="Ooops! Please try again"
+        message="Oops!  Please try again"
         open={notify.error}
       />
     </div>
