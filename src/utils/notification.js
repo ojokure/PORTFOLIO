@@ -54,8 +54,8 @@ const Notification = (props) => {
   return (
     <Snackbar
       anchorOrigin={{
-        vertical: "middle",
-        horizontal: "right",
+        vertical: "bottom",
+        horizontal: "center",
       }}
       open={open}
       autoHideDuration={6000}
