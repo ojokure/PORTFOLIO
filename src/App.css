@@ -389,7 +389,7 @@ p {
   .projects-cards {
     display: flex;
     flex-wrap: wrap;
-    width: 165px;
+    width: 255px;
     margin: 8px auto;
   }
 
