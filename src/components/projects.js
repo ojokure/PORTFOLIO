@@ -246,6 +246,7 @@ function Projects({ mode }) {
                 color: "grey",
                 height: "230px",
                 background: `url(${node}) center / cover`,
+                borderRadius: "9px",
               }}
             ></CardTitle>
             <CardText style={{ color: "black" }}>

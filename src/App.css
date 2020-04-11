@@ -167,6 +167,7 @@ input[type="checkbox"].checkbox + label {
   min-width: 360px;
   margin: 10px auto;
   overflow: visible;
+  border-radius: 9px;
 }
 
 .projects-cards:hover,
