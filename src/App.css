@@ -393,6 +393,11 @@ p {
     margin: 8px auto;
   }
 
+  .projects-cards:focus {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
+
   .social-links {
     display: flex;
     justify-content: center;
