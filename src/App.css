@@ -138,6 +138,17 @@ input[type="checkbox"].checkbox + label {
   /* background-color: black; */
 }
 
+.category-tab-dark-mode {
+  color: white;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+}
+
 .projects-grid-dark-mode {
   display: flex;
   flex-wrap: wrap;
@@ -203,6 +214,24 @@ input[type="checkbox"].checkbox + label {
   font-size: 26px;
   padding-right: 2rem;
   padding-left: 9rem;
+}
+.about-grid-dark-mode {
+  display: flex;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  margin: auto;
+  height: 100px;
+  padding-top: 2rem;
+  font-family: Nunito;
+  font-size: 18px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
 }
 
 .about-grid {
