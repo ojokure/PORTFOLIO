@@ -246,8 +246,7 @@ input[type="checkbox"].checkbox + label {
   font-size: 18px;
 }
 .about-grid article,
-p,
-h1 {
+p {
   font-family: "Nunito";
   /* max-width: 600px; */
   font-size: 18px;
@@ -258,8 +257,7 @@ h1 {
   transform: scale(1.3);
   transition: all 0.5s ease;
 }
-.about-grid h1,
-p {
+.about-grid h1 {
   font-family: "Nunito";
 }
 
