@@ -259,8 +259,7 @@ h1 {
   transition: all 0.5s ease;
 }
 .about-grid h1,
-p,
-h1 {
+p {
   font-family: "Nunito";
 }
 

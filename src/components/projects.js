@@ -36,6 +36,7 @@ function Projects({ mode }) {
                 color: "grey",
                 height: "230px",
                 background: `url(${devcoach1}) center / cover`,
+                borderRadius: "9px",
               }}
             ></CardTitle>
             <CardText>
@@ -90,6 +91,7 @@ function Projects({ mode }) {
                 color: "#2dc68c",
                 height: "230px",
                 background: `url(${devcoach2}) center / cover`,
+                borderRadius: "9px",
               }}
             ></CardTitle>
             <CardText>
@@ -144,6 +146,7 @@ function Projects({ mode }) {
                 color: "#2dc68c",
                 height: "230px",
                 background: `url(${tryble2}) center / cover`,
+                borderRadius: "9px",
               }}
             ></CardTitle>
             <CardText>
@@ -202,6 +205,7 @@ function Projects({ mode }) {
                 color: "grey",
                 height: "230px",
                 background: `url(${mud}) center / cover`,
+                borderRadius: "9px",
               }}
             ></CardTitle>
             <CardText>
@@ -282,6 +286,7 @@ function Projects({ mode }) {
                 color: "grey",
                 height: "230px",
                 background: `url(${node}) center / cover`,
+                borderRadius: "9px",
               }}
             ></CardTitle>
             <CardText style={{ color: "black" }}>
