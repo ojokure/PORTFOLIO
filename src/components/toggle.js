@@ -6,7 +6,6 @@ import { ReactComponent as SunIcon } from "../images/sun.svg";
 // import { lightTheme, darkTheme } from "./theme";
 
 const Toggle = ({ theme, toggleMode }) => {
-  console.log(theme);
   const lightTheme = theme === "light";
   return (
     <ToggleButton onClick={toggleMode}>

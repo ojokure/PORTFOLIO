@@ -47,14 +47,10 @@ function Contact() {
       .post("https://porf-server.herokuapp.com/email", contactForm)
 
       .then((res) => {
-        debugger;
-        console.log(res.data);
         setContactForm(initialForm);
         setNotify((prevNotify) => ({ ...prevNotify, success: true }));
       })
       .catch((error) => {
-        console.log(error.response.data.message);
-        debugger;
         setNotify((prevNotify) => ({
           ...prevNotify,
           error: error.response.data.message,
