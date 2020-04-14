@@ -1,42 +1,18 @@
 .header-color {
-  background: #34e89e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #0f3443,
-    #34e89e
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #0f3443,
-    #34e89e
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #34e89e;
+  background: -webkit-linear-gradient(to right, #0f3443, #34e89e);
+  background: linear-gradient(to right, #0f3443, #34e89e);
 }
 .main {
   background: #34e89e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #0f3443,
-    #34e89e
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #0f3443,
-    #34e89e
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #0f3443, #34e89e);
+  background: linear-gradient(to right, #0f3443, #34e89e);
 }
 
 .dark-mode-grid {
   background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
   text-align: center;
   position: fixed;
   top: 0;
@@ -135,7 +111,6 @@ input[type="checkbox"].checkbox + label {
   display: flex;
   justify-content: space-evenly;
   /* flex-wrap: wrap; */
-  /* background-color: black; */
 }
 
 .category-tab-dark-mode {
@@ -207,7 +182,6 @@ input[type="checkbox"].checkbox + label {
 }
 
 .contact-grid hr {
-  /* border-top: 5px dotted black; */
   width: 50%;
   margin: auto;
 }
@@ -341,9 +315,6 @@ p {
   .social-links {
     display: flex;
     justify-content: center;
-    /* justify-content: space-between;
-    align-content: center;
-    margin: auto; */
   }
   .social-links i {
     font-size: 2em;
