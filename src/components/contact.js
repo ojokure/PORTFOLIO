@@ -223,27 +223,14 @@ function Contact() {
 
 export default Contact;
 
-// const WrapDiv = styled.div`
-//   border: 1px solid white;
-//   background-image: url(${img});
-//   background-size: cover;
-//   background-position: center;
-//   height: 95vh;
-//   width: 100%;
-// `;
-
 const MainStyled = styled.main`
   width: 90vw;
   min-height: 40vh;
   max-width: 500px;
   border-radius: 4%;
   /* margin: 70px auto; */
-  background: #34e89e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #0f3443,
-    #34e89e
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #34e89e;
+  background: -webkit-linear-gradient(to right, #0f3443, #34e89e);
   background: linear-gradient(to right, #0f3443, #34e89e);
   padding: 25px;
   opacity: 0.95;
