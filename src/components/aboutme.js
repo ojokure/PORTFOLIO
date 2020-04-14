@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Grid, Cell } from "react-mdl";
 import avatar2 from "../images/avatar2.PNG";

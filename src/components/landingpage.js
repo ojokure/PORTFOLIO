@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Grid, Cell } from "react-mdl";
 import avatar1 from "../images/avatar1.png";
 
 function LandingPage({ mode }) {
-  // const [darkMode, setDarkMode] = useState(false);
-
   return (
     <div style={{ width: "100%", margin: "auto" }}>
       <Grid className={mode ? "dark-mode-grid" : "landing-grid"}>
