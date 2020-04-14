@@ -14,7 +14,7 @@ import {
 } from "react-mdl";
 import devcoach1 from "../images/devcoach4.PNG";
 import devcoach2 from "../images/devcoach1.PNG";
-import tryble1 from "../images/tryble1.PNG";
+// import tryble1 from "../images/tryble1.PNG";
 import tryble2 from "../images/tryble2.PNG";
 import mud from "../images/mud.PNG";
 import node from "../images/node.PNG";
